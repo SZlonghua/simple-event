@@ -1,10 +1,12 @@
 package com.simple.source;
 
+import com.simple.event.EndEvent;
+import com.simple.event.StartEvent;
 import com.simple.listener.OneSimpleEventListener;
 import com.simple.listener.TwoSimpleEventListener;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+
 
 public class SimpleSubjectTest {
 
@@ -14,6 +16,23 @@ public class SimpleSubjectTest {
         subject.add(new OneSimpleEventListener());
         subject.add(new TwoSimpleEventListener());
         subject.operation();
+
+    }
+
+
+    @Test
+    public void test2(){
+
+        SimpleSubject subject = new SimpleSubject();
+        subject.publish(new StartEvent(new Object()));
+
+    }
+
+    @Test
+    public void test3(){
+
+        SimpleSubject subject = new SimpleSubject();
+        subject.publish(new EndEvent(new Object()));
 
     }
 

@@ -1,8 +1,6 @@
 package com.simple.event;
 
-import java.util.EventObject;
-
-public class EndEvent extends EventObject {
+public class EndEvent extends SimpleEvent {
     /**
      * Constructs a prototypical Event.
      *

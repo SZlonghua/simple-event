@@ -1,6 +1,7 @@
 package com.simple.source;
 
 
+import com.simple.event.SimpleEvent;
 import com.simple.listener.SimpleEventListener;
 
 public interface Subject {
@@ -12,4 +13,6 @@ public interface Subject {
     void notifyObservers();
 
     void operation();
+
+    void publish(SimpleEvent simpleEvent);
 }

@@ -1,8 +1,9 @@
 package com.simple.listener;
 
+import com.simple.event.SimpleEvent;
+
 import java.util.EventListener;
-import java.util.EventObject;
 
 public interface SimpleEventListener extends EventListener {
-    void handEvent(EventObject event);
+    void handEvent(SimpleEvent event);
 }

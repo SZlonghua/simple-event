@@ -1,0 +1,9 @@
+com.simple.event.StartEvent = \
+	com.simple.listener.OneSimpleEventListener,\
+	com.simple.listener.OneSimpleEventListener,\
+	com.simple.listener.TwoSimpleEventListener
+
+com.simple.event.EndEvent = \
+	com.simple.listener.TwoSimpleEventListener,\
+	com.simple.listener.OneSimpleEventListener,\
+	com.simple.listener.TwoSimpleEventListener
